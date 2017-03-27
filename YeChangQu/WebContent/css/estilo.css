@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+@import url("http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700|Droid+Serif:700|Open+Sans:400italic,700italic,400,700");
+
+body {
+    font-family: 'Open Sans', sans-serif;<!--familia generica define las letras normales y precode-->
+    color: #394b4b;
+    background-color: #f8f8ff;
+    text-align: justify;
+    margin: 0.75em 0;
+    padding: 0;
+}
+
+section, aside {
+	margin: 0;
+    border-left: 3px solid #001f3f;
+    border-right: 3px solid #001f3f;
+    border-bottom: 3px solid #001f3f;
+    border-top: 3px solid #001f3f;
+}
+
+section {
+    padding: 2em 4em 1em 4em;
+}
+
+aside {
+	padding: 0 4em 1.5em 4em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Droid Serif', serif;
+	color: rgb(46, 116, 181);
+}
+
+h1 a, h1 a:link, h1 a:visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+header {
+	background-color: #7fdbff;
+	min-height: 99px;
+	font-size: 249%;
+	height: 129px;
+	
+	/*border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+	border-left: 3px solid #001f3f;
+    border-right: 3px solid #001f3f;
+    border-top: 3px solid #001f3f;*/
+}
+
+header img {
+	float: left;
+	opacity: 0.7;
+	width: 90px;
+	height: 90px;
+	margin-top: -13px;
+	margin-right: 1em;
+    border-top-left-radius: 0.4em;
+}
+
+header h1, header h2 {
+	margin: 0;
+	padding: 5px 0 0 0;
+}
+
+header h1 {
+	font-style: italic;
+	opacity: 0.6;
+	font-size: 89%
+}
+
+header h2 {
+	text-align: center;
+}
+
+nav {
+	clear: both;
+    font-size: 90%;
+}
+
+nav > ul {
+	list-style: none;
+    margin: 1px 0 0 0;
+    padding: 0;
+    background-color: #001f3f;
+    border: 1px solid #001f3f;
+    font-size: 120%;
+}
+
+nav li {
+	display: inline-block;
+    color: rgb(100%, 100%, 100%);
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.4em 1em;
+}
+
+nav a:hover {
+	background-color: #0074d9;
+}
+
+nav a:link, nav a:visited {
+	color: rgb(100%, 100%, 100%);
+	text-decoration: none;
+}
+
+.ecuacion, code, #Tabla3 thead th:nth-child(n+2) {
+	font-family: 'Source Code Pro', fixed;
+}
+
+.ecuacion, #Tabla3 thead th:nth-child(n+2) {
+	font-style: oblique;
+}
+
+figure, figure > p {
+	margin: 0;
+	padding: 0;
+}
+
+figure > pre, figure > table {
+	margin-bottom: 0.15em;
+}
+
+figure > pre {
+	font-size: 1em;
+}
+
+figcaption::before {
+	content: attr(title) ". ";
+	font-weight: 700;
+}
+
+figcaption {
+	font-size: 85%;
+	font-style: italic;
+}
+
+#Figura3 img {
+	width: 578px;
+	height: 268px;
+}
+
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
+th, td {
+	border: 1px solid rgb(40%, 40%, 40%);
+	padding: 2px 0.5em;
+}
+
+td {
+	text-align: right;
+}
+
+th {
+	color: rgb(46, 116, 181);
+    background-color: #7fdbff;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+}
+
+#Tabla3 caption {
+	color: rgb(46, 116, 181);
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 0.2em;
+}
+
+
+
+
+
+#Tabla3 tbody tr:nth-child(2n){
+	background-color :#A9E2F3;
+} 
+/*#Tabla3 tbody tr:nth-child(even){
+*	background :#A9E2F3;<!--#7fdbff-->
+}
+*/
+#Tabla2 tfoot{
+	display: none;
+}
+
+#Figura1 figure{
+	text-align:center ;
+	vertical-align: center;
+}
+.tabla{
+	margin:0 auto;
+}
+
+
+
+
+
+
+.center {
+    text-align: center;
+}
+
+.cursiva, span.keyword {
+	font-style: italic;
+}
+
+.en_linea {
+	display: inline;
+}
+
+footer {
+	clear: both;
+	min-height: 49px;/*al menos tiene que tener eso*/
+    background-color: #7fdbff;
+    margin-bottom: 2em;
+    padding: 1em 0.5em;
+    
+    /*border-left: 3px solid #001f3f;
+    border-right: 3px solid #001f3f;
+    border-bottom: 3px solid #001f3f;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;*/
+    
+    width: 100%;
+    bottom: -66px;
+    position:relative;/*si es absolute es fijo abajo, fixed es siempre visible abajo relative es relativa del arriba*/
+    height: 65px;
+    
+    text-align: center;
+} 
+
